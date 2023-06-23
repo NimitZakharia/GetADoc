@@ -2,12 +2,12 @@
 $search_param = $_POST['search'];
 $search_area =$_POST["area"];
 //setting parameters for connection
-
+//append dbuser, dbname, dbpass
 if(isset($_POST["search"]) && isset($_POST["area"])){
 $host ="localhost";
-$dbuser ="id20938735_admin";
-$dbname ="id20938735_doctors";
-$dbpass = "Getadocadmin@123";
+$dbuser ="";
+$dbname ="";
+$dbpass = "";
 
 $conn = new mysqli($host,$dbuser,$dbpass,$dbname);
 if ($conn->connect_error) {
