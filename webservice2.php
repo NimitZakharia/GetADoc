@@ -5,9 +5,9 @@ $search_area =$_POST["area"];
 $doctor_data="";
 if(isset($_POST["search"]) && isset($_POST["area"])){
 $host ="localhost";
-$dbuser ="id20938735_admin";
-$dbname ="id20938735_doctors";
-$dbpass = "Getadocadmin@123";
+$dbuser ="";
+$dbname ="";
+$dbpass = "";
 
 $conn = new mysqli($host,$dbuser,$dbpass,$dbname);
 if ($conn->connect_error) {
